@@ -1409,3 +1409,332 @@ Content-Length: 441
 2024-07-15 16:32:30,293 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:46]
 2024-07-15 16:42:50,237 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
 2024-07-15 16:42:52,422 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 16:51:34,110 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 16:51:36,340 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 16:52:01,028 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 52b73712-68db-4883-b040-c797c064afd9
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 45
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 16:52:01,028 INFO: Body: b'{\r\n    "name":"ww",\r\n    "category_id":"1"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 16:52:01,063 INFO: Start Query: INSERT INTO tb_item (id, name, category_id) VALUES (%(id)s, %(name)s, %(category_id)s) [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 16:52:01,065 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 16:52:01,075 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 16:52:01,077 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 16:52:01,078 INFO: Response status: 201 CREATED [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 16:52:01,078 INFO: Response headers: Content-Type: application/json
+Content-Length: 153
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 16:53:28,077 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 16:54:47,357 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 16:55:40,143 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 16:56:24,128 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:00:27,228 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:00:28,838 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 1369b08f-627d-48b7-9a4a-9f2880215b35
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:00:28,838 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:00:31,796 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:00:31,797 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:00:43,648 INFO: Response status: 200 OK [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:00:43,649 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:00:47,675 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: c44a79dd-2201-466e-ab11-916390788c3b
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:00:47,675 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:00:49,246 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:00:49,249 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:00:58,157 ERROR: Unhandled Exception: Object of type bytes is not JSON serializable [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:89]
+2024-07-15 17:00:58,158 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:00:58,159 INFO: Response headers: Content-Type: application/json
+Content-Length: 111
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:04:36,827 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:04:51,684 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 45137520-85fb-4166-9464-05940cc877f4
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:04:51,684 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:04:51,719 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:04:51,720 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:04:51,963 INFO: Response status: 200 OK [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:04:51,963 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:06:27,011 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:06:48,501 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:19:49,254 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:19:51,455 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:19:58,733 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: c4241e13-c0a5-46dc-8934-eabe46bbcb40
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:19:58,733 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:20:02,377 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:20:02,379 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:20:17,270 ERROR: Unhandled Exception: Invalid input of type: 'dict'. Convert to a bytes, string, int or float first. [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:89]
+2024-07-15 17:20:17,271 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:20:17,272 INFO: Response headers: Content-Type: application/json
+Content-Length: 144
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:20:47,391 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:20:47,627 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 5937266e-ec05-470e-9de8-c7f1b9bd45e9
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:20:47,627 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:20:48,512 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:20:48,514 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:20:54,540 ERROR: Unhandled Exception: 'UserDTO' object is not subscriptable [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:89]
+2024-07-15 17:20:54,541 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:20:54,542 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:22:18,338 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:22:43,534 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:22:43,838 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 6d45c61d-4d12-459f-89b2-0a28fd80e48e
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:22:43,839 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:22:44,170 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:22:44,172 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:23:15,929 ERROR: Unhandled Exception: 'UserDTO' object is not subscriptable [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:89]
+2024-07-15 17:23:15,930 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:23:15,930 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:23:38,545 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:23:38,734 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 98d6ec53-2366-49f7-9205-e86421b16266
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:23:38,735 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:23:40,748 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:23:40,750 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:23:45,604 INFO: Response status: 200 OK [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:23:45,605 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:25:26,536 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:27:03,735 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:27:06,000 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 0e57f7ff-a34a-4ca7-a5fb-e555fb27247b
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:27:06,000 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:27:08,322 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:27:08,324 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:27:14,915 INFO: Response status: 200 OK [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:27:14,916 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:29:17,514 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:32:33,635 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:32:45,112 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 8038cb5c-80f9-4468-8db4-51b816254951
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:32:45,112 INFO: Body: b'' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:32:56,774 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:32:56,775 INFO: Response headers: Content-Type: application/json
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:33:13,355 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:33:13,546 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 4068efb7-c14c-49df-af59-8da504db434c
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:33:13,547 INFO: Body: b'' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:33:15,486 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:33:15,486 INFO: Response headers: Content-Type: application/json
+Content-Length: 65
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:34:30,638 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 8885fcc0-af0b-401e-82f5-281f8a21213c
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:34:30,638 INFO: Body: b'' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:34:55,005 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:34:55,006 INFO: Response headers: Content-Type: application/json
+Content-Length: 65
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:39:31,341 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:40:24,807 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:41:09,825 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:41:26,661 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: b3734ee8-bbf6-465f-9df3-b36aadb3f0d9
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:41:26,662 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:41:26,695 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:74]
+2024-07-15 17:41:26,697 INFO: Query Complete [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:79]
+2024-07-15 17:41:26,905 INFO: Response status: 200 OK [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:41:26,905 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:41:41,071 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 14f8b8c9-1a53-4962-bf4f-739816515993
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:41:41,072 INFO: Body: b'' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:41:41,073 INFO: Response status: 200 OK [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:41:41,073 INFO: Response headers: Content-Type: application/json
+Content-Length: 211
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
+2024-07-15 17:42:41,953 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 17:42:42,147 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 6e20261b-bba2-4749-a69a-0bca815f4e8b
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:62]
+2024-07-15 17:42:42,148 INFO: Body: b'' [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:63]
+2024-07-15 17:42:42,151 INFO: Response status: 200 OK [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:67]
+2024-07-15 17:42:42,152 INFO: Response headers: Content-Type: application/json
+Content-Length: 96
+
+ [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:68]
