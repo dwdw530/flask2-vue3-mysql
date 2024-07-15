@@ -1401,3 +1401,11 @@ WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.
 Content-Length: 441
 
  [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 16:17:23,827 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:46]
+2024-07-15 16:17:25,984 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:46]
+2024-07-15 16:32:14,255 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:46]
+2024-07-15 16:32:17,167 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:46]
+2024-07-15 16:32:27,993 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:46]
+2024-07-15 16:32:30,293 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:46]
+2024-07-15 16:42:50,237 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]
+2024-07-15 16:42:52,422 INFO: App startup [in D:\python-workspace\flask2-vue3-mysql\app\__init__.py:50]

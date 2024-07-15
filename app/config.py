@@ -9,4 +9,6 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = os.getenv('SECRET_KEY')
     JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY')  # 添加 JWT 密钥配置
+    # Redis 配置
+    REDIS_URL = "redis://localhost:6379/0"
 

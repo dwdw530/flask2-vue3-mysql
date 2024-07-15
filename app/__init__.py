@@ -8,6 +8,7 @@ from logging.handlers import TimedRotatingFileHandler
 import os
 from sqlalchemy import event
 from sqlalchemy.engine import Engine
+from redis import Redis
 
 app = Flask(__name__)
 app.config.from_object('app.config.Config')
@@ -16,6 +17,9 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 CORS(app)
 jwt = JWTManager(app)
+
+# 初始化 Redis 客户端
+redis_client = Redis.from_url(app.config['REDIS_URL'])
 
 def configure_logging(app):
     if not app.debug:
@@ -47,14 +51,9 @@ def configure_logging(app):
 
 configure_logging(app)
 
-# 添加蓝图（导入并注册所有路由）
-from app.routes.test_user_routes import test_user_bp
-from app.routes.tb_item_routes import tb_item_bp
-from app.routes.auth_routes import auth_bp
-
-app.register_blueprint(test_user_bp)
-app.register_blueprint(tb_item_bp)
-app.register_blueprint(auth_bp, url_prefix='/api')
+# 注册蓝图
+from app.routes import register_blueprints
+register_blueprints(app)
 
 # 记录 Flask 请求
 @app.before_request
