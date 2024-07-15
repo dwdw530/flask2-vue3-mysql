@@ -42,6 +42,6 @@ def login():
             user_json = json.dumps(user_dto.to_dict())
             redis_client.set(f"user:{id}", user_json, ex=60*60)
         access_token = create_access_token(identity=email)
-        return jsonify({"token": access_token, "user": {"name": user_dto.name, "email": user_dto.email}}), 200
+        return jsonify({"token": access_token, "user": {"name": user.name, "email": user.email}}), 200
     else:
         return jsonify({"message": "Invalid credentials"}), 401
