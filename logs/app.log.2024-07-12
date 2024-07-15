@@ -1,0 +1,87 @@
+2024-07-12 23:34:14,794 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:42]
+2024-07-12 23:34:16,943 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:42]
+2024-07-12 23:34:19,287 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 8011f84a-0f1c-42b6-9e75-bec77cc92333
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 104
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:57]
+2024-07-12 23:34:19,288 INFO: Body: b'{\r\n    "page":1,\r\n    "per_page":20,\r\n    "other_data":{\r\n        "category_name":"Ding Yunxi"\r\n    }\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:58]
+2024-07-12 23:34:19,319 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-12 23:34:19,321 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:74]
+2024-07-12 23:34:19,325 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-12 23:34:19,327 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:74]
+2024-07-12 23:34:19,330 INFO: Start Query: SELECT tb_category.id AS tb_category_id, tb_category.category_name AS tb_category_category_name 
+FROM tb_category 
+WHERE tb_category.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-12 23:34:19,332 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:74]
+2024-07-12 23:34:19,335 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:62]
+2024-07-12 23:34:19,335 INFO: Response headers: Content-Type: application/json
+Content-Length: 1167
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-12 23:34:22,911 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 7d61c54b-7389-4b92-ba88-4b398e371b10
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:57]
+2024-07-12 23:34:22,912 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:58]
+2024-07-12 23:34:22,914 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name 
+FROM test_user 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-12 23:34:22,916 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:74]
+2024-07-12 23:34:22,920 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT test_user.id AS test_user_id, test_user.name AS test_user_name 
+FROM test_user) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-12 23:34:22,921 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:74]
+2024-07-12 23:34:22,923 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:62]
+2024-07-12 23:34:22,923 INFO: Response headers: Content-Type: application/json
+Content-Length: 676
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-12 23:34:25,475 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 8049da33-a084-40cd-935c-53eb799fa87a
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 104
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:57]
+2024-07-12 23:34:25,475 INFO: Body: b'{\r\n    "page":1,\r\n    "per_page":20,\r\n    "other_data":{\r\n        "category_name":"Ding Yunxi"\r\n    }\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:58]
+2024-07-12 23:34:25,477 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-12 23:34:25,479 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:74]
+2024-07-12 23:34:25,480 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-12 23:34:25,481 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:74]
+2024-07-12 23:34:25,483 INFO: Start Query: SELECT tb_category.id AS tb_category_id, tb_category.category_name AS tb_category_category_name 
+FROM tb_category 
+WHERE tb_category.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-12 23:34:25,484 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:74]
+2024-07-12 23:34:25,487 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:62]
+2024-07-12 23:34:25,487 INFO: Response headers: Content-Type: application/json
+Content-Length: 1167
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]

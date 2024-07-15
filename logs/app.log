@@ -1,0 +1,1403 @@
+2024-07-15 11:24:57,789 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:25:00,705 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:25:17,477 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:25:19,814 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:25:45,818 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 1b2cb384-7a6a-4540-acd5-07688c6dbce9
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 45
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:25:45,819 INFO: Body: b'{\r\n    "name":"ww",\r\n    "category_id":"1"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:25:45,860 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:25:45,862 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:25:45,870 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:25:45,873 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:25:45,876 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:25:45,876 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:25:53,826 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 6f2eed63-a8c5-47ec-9342-d8033739b99b
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 104
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:25:53,827 INFO: Body: b'{\r\n    "page":1,\r\n    "per_page":20,\r\n    "other_data":{\r\n        "category_name":"Ding Yunxi"\r\n    }\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:25:53,835 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:25:53,838 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:25:53,841 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:25:53,844 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:25:53,850 INFO: Start Query: SELECT tb_category.id AS tb_category_id, tb_category.category_name AS tb_category_category_name 
+FROM tb_category 
+WHERE tb_category.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:25:53,852 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:25:53,857 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:25:53,857 INFO: Response headers: Content-Type: application/json
+Content-Length: 1873
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:26:03,412 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: dc93cb58-c16e-468e-9127-83c7c444add6
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 104
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:26:03,412 INFO: Body: b'{\r\n    "page":1,\r\n    "per_page":20,\r\n    "other_data":{\r\n        "category_name":"Ding Yunxi"\r\n    }\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:26:03,415 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:26:03,418 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:26:03,419 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:26:03,422 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:26:03,425 INFO: Start Query: SELECT tb_category.id AS tb_category_id, tb_category.category_name AS tb_category_category_name 
+FROM tb_category 
+WHERE tb_category.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:26:03,426 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:26:03,431 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:26:03,432 INFO: Response headers: Content-Type: application/json
+Content-Length: 1873
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:26:08,194 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 4da938da-c8e8-418f-bb22-4061a085553f
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:26:08,195 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:26:08,198 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:26:08,200 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:26:08,207 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:26:08,208 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:26:08,210 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:26:08,210 INFO: Response headers: Content-Type: application/json
+Content-Length: 767
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:26:12,563 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: a57a279d-7adf-451c-aeb3-5c7c07523e09
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 45
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:26:12,563 INFO: Body: b'{\r\n    "name":"ww",\r\n    "category_id":"1"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:26:12,569 INFO: Start Query: INSERT INTO tb_item (id, name, category_id) VALUES (%(id)s, %(name)s, %(category_id)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:26:12,572 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:26:12,580 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:26:12,581 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:26:12,583 INFO: Response status: 201 CREATED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:26:12,583 INFO: Response headers: Content-Type: application/json
+Content-Length: 153
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:26:17,430 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 5e63017e-fe8e-47af-acb9-b62c33f3b114
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 55
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:26:17,430 INFO: Body: b'{\r\n    "email":"12345@qq.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:26:17,433 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:26:17,434 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:26:17,565 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:26:17,565 INFO: Response headers: Content-Type: application/json
+Content-Length: 421
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:26:54,463 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:26:58,138 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:28:21,594 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:28:53,068 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:38:00,680 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:38:02,449 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 5a77e683-b742-43b3-9371-a39a16e88398
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 55
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:38:02,449 INFO: Body: b'{\r\n    "email":"12345@qq.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:38:02,488 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:38:02,490 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:38:02,633 ERROR: Unhandled Exception: 'dict' object has no attribute 'check_password' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:38:02,634 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:38:02,634 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:38:42,587 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:38:42,784 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 99a004e6-4a31-40f6-ae7f-62a923ea72bc
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 55
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:38:42,784 INFO: Body: b'{\r\n    "email":"12345@qq.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:38:42,808 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:38:42,810 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:38:42,909 ERROR: Unhandled Exception: 'TestUser' object has no attribute 'to_dict' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:38:42,910 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:38:42,910 INFO: Response headers: Content-Type: application/json
+Content-Length: 110
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:39:35,274 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:39:35,464 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 49bea326-dbbe-4c0f-9765-87ccdcf501b1
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 55
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:39:35,464 INFO: Body: b'{\r\n    "email":"12345@qq.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:39:35,493 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:39:35,495 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:39:35,699 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:39:35,699 INFO: Response headers: Content-Type: application/json
+Content-Length: 421
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:40:43,909 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:43:48,445 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 2445f0be-7fa2-4e37-b1bc-e916986b9b5e
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:43:48,446 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:43:48,480 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:43:48,481 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:43:48,482 ERROR: Unhandled Exception: 'password' is an invalid keyword argument for TestUser [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:43:48,483 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:43:48,483 INFO: Response headers: Content-Type: application/json
+Content-Length: 120
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:44:51,388 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:44:51,581 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 4b163822-e242-42a6-8c0c-7a50e825f406
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:44:51,582 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:44:51,604 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:44:51,606 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:44:51,712 ERROR: Error creating TestUser: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\user_service.py:77]
+2024-07-15 11:44:51,712 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:44:51,713 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:44:51,713 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:45:24,978 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:45:27,218 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:45:27,418 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: a9567c0b-926c-485d-ade2-7c0e2aa44dfb
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:45:27,418 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:45:27,446 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:45:27,448 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:45:27,556 ERROR: Error creating TestUser: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\user_service.py:77]
+2024-07-15 11:45:27,557 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:45:27,558 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:45:27,559 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:45:42,053 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 37724a71-f61a-4b17-a5f0-8fd6863b49fa
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:45:42,054 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:45:50,780 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:45:50,782 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:46:52,023 ERROR: Error creating TestUser: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\user_service.py:77]
+2024-07-15 11:46:52,024 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:46:52,025 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:46:52,025 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:47:33,779 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:47:33,971 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 7069f96b-4e07-4512-ae36-c5867d9edd93
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:47:33,972 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:47:36,618 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:47:36,621 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:47:45,980 ERROR: Error creating TestUser: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\user_service.py:77]
+2024-07-15 11:47:45,981 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:47:45,982 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:47:45,983 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:53:34,858 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:53:35,047 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: b2cc4d6a-e20c-49a9-a2ba-0cb858ed6540
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:53:35,047 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:53:37,452 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:53:37,454 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:53:37,558 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:53:37,561 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:53:37,567 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:53:37,568 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:53:37,570 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:53:37,571 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:53:37,572 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:54:13,162 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: aa1a9caa-2a5c-4639-9bb7-44b4678caf59
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:54:13,162 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:54:13,164 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:54:13,165 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:54:13,271 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:54:13,273 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:54:13,278 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:54:13,279 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:54:13,280 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:54:13,281 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:54:13,281 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:55:52,028 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 80364004-6e94-4e83-9b66-400a23ae79e3
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:55:52,029 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:55:52,031 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:55:52,033 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:55:52,034 INFO: Response status: 400 BAD REQUEST [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:55:52,034 INFO: Response headers: Content-Type: application/json
+Content-Length: 39
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:56:09,322 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 33b7c8a1-b6fd-4ce7-ba4a-7bff3a4471b3
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:56:09,322 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:56:09,323 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:56:09,324 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:56:09,430 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:56:09,432 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:56:09,436 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:56:09,438 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:56:09,439 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:56:09,440 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:56:09,440 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:57:20,048 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:57:26,927 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 5ad2cff5-180c-4a2c-bfe1-0cb79ad73337
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:57:26,927 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:57:26,961 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:57:26,963 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:57:27,076 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:57:27,077 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:57:32,062 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:57:32,064 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:59:05,812 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:59:05,813 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:59:05,813 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 11:59:37,025 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 11:59:42,275 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 7a24a910-2ed7-4e87-b9df-eca71e0b927a
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 11:59:42,275 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 11:59:42,313 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:59:42,315 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:59:42,425 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:59:42,426 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:59:45,981 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 11:59:45,982 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 11:59:52,311 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 11:59:52,312 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 11:59:52,313 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:15:26,998 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:15:32,892 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: c4b45983-d4ff-4b95-9097-1bbc8b3f91d4
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:15:32,892 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:15:32,920 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:15:32,922 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:15:33,065 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:15:33,067 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:15:33,072 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:15:33,073 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:17:58,613 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:17:58,614 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:17:58,614 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:18:38,434 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:18:44,845 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: beb0286f-a7c8-453a-98b7-b2a7baf22e62
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:18:44,846 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:18:44,869 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:18:44,870 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:18:44,983 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:18:44,984 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:18:44,990 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:18:44,992 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:18:47,131 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:18:47,132 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:18:47,133 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:19:29,670 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:19:31,899 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:19:37,967 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: c0ba7e85-c846-4e81-9100-754dcc8201e3
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:19:37,968 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:19:37,992 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:19:37,993 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:19:38,101 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:19:38,102 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:19:38,109 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:19:38,111 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:19:41,113 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:19:41,114 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:19:41,115 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:20:58,600 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:21:37,237 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:21:43,436 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: ccd26602-5b79-4def-b58b-484fcfc8ebd5
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:21:43,437 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:21:43,471 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:21:43,472 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:21:43,585 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:21:43,586 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:21:43,596 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:21:43,597 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:21:52,777 ERROR: Unhandled Exception: 'dict' object has no attribute 'id' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:21:52,779 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:21:52,779 INFO: Response headers: Content-Type: application/json
+Content-Length: 101
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:22:52,154 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:23:09,564 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:23:15,353 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 18f918a4-aa66-41fc-9eda-0d757fab0fac
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:23:15,353 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:23:15,387 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:23:15,388 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:23:15,496 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:23:15,497 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:23:15,505 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:23:15,506 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:23:42,002 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:23:42,003 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:23:42,003 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:23:46,285 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:23:51,554 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: c8ddb4a3-402a-4146-897b-20479e7eaf7f
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:23:51,554 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:23:51,581 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:23:51,582 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:23:51,696 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:23:51,698 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:23:51,703 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:23:51,705 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:24:02,283 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:24:02,284 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:24:02,284 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:24:15,553 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:24:19,551 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: e559ccb7-1aca-420a-a587-85b2ad674451
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:24:19,552 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:24:19,576 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:24:19,577 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:24:19,691 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:24:19,693 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:24:19,698 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:24:19,700 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:24:23,755 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:24:23,757 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:24:23,757 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:25:40,999 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: d1a28786-6175-4ae8-9254-586acac58579
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:25:41,000 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:25:41,002 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:25:41,003 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:25:41,118 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:25:41,119 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:25:47,833 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:25:47,834 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:26:20,167 ERROR: Unhandled Exception: 'dict' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:26:20,168 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:26:20,168 INFO: Response headers: Content-Type: application/json
+Content-Length: 103
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:26:23,748 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:26:29,956 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 97ee6e9c-5305-4f93-9dcb-6c2e9f2bb0c2
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:26:29,956 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:26:29,990 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:26:29,991 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:26:30,102 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:26:30,103 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:26:31,790 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:26:31,791 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:26:44,659 ERROR: Unhandled Exception: 'Response' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:26:44,661 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:26:44,661 INFO: Response headers: Content-Type: application/json
+Content-Length: 107
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:29:34,723 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:29:53,164 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: d9178e54-8e4c-444e-b02c-3b5200948f81
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:29:53,164 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:29:53,204 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:29:53,206 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:29:53,345 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:29:53,347 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:29:53,352 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:29:53,353 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:29:53,354 INFO: UserDTO: {'id': 'e59aa57498ce4d1e9eba23ee9b9c239f', 'name': 'wangwu', 'email': 'wangwu123@gmail.com', 'pwd': 'pbkdf2:sha256:260000$iwI97ddOPbdKMsw3$4ddf5d9e360ab27badaf5188973c784f211150fadbc0fb93ace3842aed5f22d9'} [in D:\python-workspace\flaskProject\app\services\user_service.py:74]
+2024-07-15 12:30:19,247 ERROR: Unhandled Exception: 'Response' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:30:19,248 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:30:19,249 INFO: Response headers: Content-Type: application/json
+Content-Length: 107
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:31:18,438 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 6442174b-0cbc-4941-8a7c-f45e5e7982df
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:31:18,438 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:31:18,440 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:31:18,442 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:31:18,552 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:31:18,553 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:31:23,088 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:31:23,090 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:31:52,508 INFO: UserDTO: {'id': '4a753234706c46a4b3fbdf6b28692473', 'name': 'wangwu', 'email': 'wangwu123@gmail.com', 'pwd': 'pbkdf2:sha256:260000$HUiZRaEx0OruoQC6$b6e993e96affbb0bc9fde913fe73baa4595d6168ce581f42afc1fa4da0375d6d'} [in D:\python-workspace\flaskProject\app\services\user_service.py:74]
+2024-07-15 12:32:18,931 ERROR: Unhandled Exception: 'Response' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:32:18,932 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:32:18,933 INFO: Response headers: Content-Type: application/json
+Content-Length: 107
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:32:48,763 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 6818a7e4-985a-42d1-af4f-e4269bf25af2
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:32:48,764 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:32:48,766 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:32:48,767 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:32:52,797 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:32:52,798 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:32:52,804 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:32:52,806 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:32:55,722 INFO: UserDTO: {'id': 'a20fe16ec4bd4c99b82b4617fe4a51f5', 'name': 'wangwu', 'email': 'wangwu123@gmail.com', 'pwd': 'pbkdf2:sha256:260000$TU9S83CjP4iSm7Un$20a76ba913b1b1594163613bc7686c415b4cfd6a608be1b322abc95d41d2d5ed'} [in D:\python-workspace\flaskProject\app\services\user_service.py:74]
+2024-07-15 12:33:36,475 ERROR: Unhandled Exception: 'Response' object has no attribute 'name' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 12:33:36,476 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:33:36,476 INFO: Response headers: Content-Type: application/json
+Content-Length: 107
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:33:50,139 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:34:50,090 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:34:51,785 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 99614606-75d2-49f6-9b21-0fe21d982dbc
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:34:51,786 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:34:51,818 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:34:51,819 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:34:51,923 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:34:51,925 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:34:51,933 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:34:51,935 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:34:53,593 INFO: UserDTO: {'id': '85dee95862154bd28eb3daa7c6080d46', 'name': 'wangwu', 'email': 'wangwu123@gmail.com', 'pwd': 'pbkdf2:sha256:260000$6DCL6lbUlMtZdfTM$f365cedcbdfb720f5a697fe89e0b1d663d1a58e63a158cc248362674e74bf595'} [in D:\python-workspace\flaskProject\app\services\user_service.py:74]
+2024-07-15 12:34:53,595 INFO: Response status: 201 CREATED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:34:53,595 INFO: Response headers: Content-Type: application/json
+Content-Length: 604
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:37:43,442 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:38:23,044 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:38:25,293 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 12:38:30,461 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 741c8269-f60f-4e8a-8c8d-4dab261815a3
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:38:30,462 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:38:30,495 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:38:30,497 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:38:30,602 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:38:30,603 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:38:30,609 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:38:30,611 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:38:30,612 INFO: UserDTO: {'id': 'aefc6e8d3ec0487ba99183ef8c3accd4', 'name': 'wangwu', 'email': 'wangwu123@gmail.com', 'pwd': 'pbkdf2:sha256:260000$YMqt7Gyi1M4M0Qp5$8a2284c2aa1ab8868a830bb34ed9d15e1d9166aad92cdfa6f9ab2508f75fd414'} [in D:\python-workspace\flaskProject\app\services\user_service.py:74]
+2024-07-15 12:38:30,614 INFO: Response status: 201 CREATED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:38:30,614 INFO: Response headers: Content-Type: application/json
+Content-Length: 441
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 12:39:48,094 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: f61e7665-a125-437e-813c-f9b5722c5030
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 12:39:48,095 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 12:39:48,098 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 12:39:48,099 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 12:39:48,100 INFO: Response status: 404 NOT FOUND [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 12:39:48,101 INFO: Response headers: Content-Type: application/json
+Content-Length: 34
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:30:27,512 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 554e600c-8401-41ed-a63e-e698ab6a290e
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:30:27,512 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:30:37,882 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:30:37,884 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:30:45,984 INFO: Response status: 404 NOT FOUND [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:30:45,985 INFO: Response headers: Content-Type: application/json
+Content-Length: 34
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:31:02,621 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: f5cbb92e-9836-4568-93f8-56257174dfb1
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:31:02,621 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:31:10,527 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:31:10,529 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:34:56,243 INFO: Response status: 404 NOT FOUND [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:34:56,244 INFO: Response headers: Content-Type: application/json
+Content-Length: 34
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:35:06,247 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: ece369ee-7009-4700-ac29-fb404e4f9a99
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:35:06,247 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:35:06,250 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:35:06,251 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:35:06,253 ERROR: Error deleting TbItem: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\tb_item_service.py:145]
+2024-07-15 14:35:06,253 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 14:35:06,254 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:35:06,254 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:35:37,354 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:35:37,673 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: a6ea4f3f-3900-4301-8cf3-17e998ab7bf9
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:35:37,674 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:35:37,717 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:35:37,721 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:35:37,726 INFO: Start Query: DELETE FROM tb_item WHERE tb_item.id = %(id)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:35:37,728 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:35:37,734 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:35:37,735 INFO: Response headers: Content-Type: application/json
+Content-Length: 46
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:39:45,690 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:40:50,879 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 0e17c4a3-6465-4b65-b21b-56f30d1d767e
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 26
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:40:50,880 INFO: Body: b'{\r\n    "name":"Plpotss"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:40:50,915 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:40:50,917 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:40:50,919 ERROR: Error updating TbItem: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\tb_item_service.py:130]
+2024-07-15 14:40:50,919 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 14:40:50,920 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:40:50,920 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:42:11,110 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:42:11,412 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: d19c00e6-094a-4744-9716-32478bec9ac5
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 26
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:42:11,412 INFO: Body: b'{\r\n    "name":"Plpotss"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:42:11,461 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:42:11,463 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:42:11,467 ERROR: Error updating TbItem: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\tb_item_service.py:129]
+2024-07-15 14:42:11,468 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 14:42:11,469 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:42:11,470 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:42:23,825 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 17fcbfee-6661-4f5a-817a-45ffd7988f6a
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 26
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:42:23,825 INFO: Body: b'{\r\n    "name":"Plpotss"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:42:26,730 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:42:26,732 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:42:30,103 INFO: Start Query: SELECT tb_category.id AS tb_category_id, tb_category.category_name AS tb_category_category_name 
+FROM tb_category 
+WHERE tb_category.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:42:30,104 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:42:37,260 ERROR: Error updating TbItem: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\tb_item_service.py:129]
+2024-07-15 14:42:37,261 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 14:42:37,262 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:42:37,262 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:44:36,359 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:44:42,960 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:44:53,196 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: e50fde9d-5537-4a24-be57-1d6cb03ad6c1
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 26
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:44:53,197 INFO: Body: b'{\r\n    "name":"Plpotss"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:44:53,230 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:44:53,231 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:44:53,235 INFO: Start Query: UPDATE tb_item SET name=%(name)s WHERE tb_item.id = %(tb_item_id)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:44:53,238 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:44:53,244 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:44:53,245 INFO: Response headers: Content-Type: application/json
+Content-Length: 129
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:45:27,309 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 09c9b772-0484-4ca9-bbc5-d71d24a42316
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:45:27,309 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:45:27,311 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:45:27,312 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:45:27,314 ERROR: Error deleting TbItem: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\services\tb_item_service.py:143]
+2024-07-15 14:45:27,314 ERROR: Unhandled Exception: A transaction is already begun on this Session. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-15 14:45:27,315 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:45:27,315 INFO: Response headers: Content-Type: application/json
+Content-Length: 113
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:46:11,983 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:46:12,175 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: c1f106b1-9c0e-47b3-a0fe-622315604e8f
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:46:12,176 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:46:12,210 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:46:12,212 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:46:12,215 INFO: Start Query: DELETE FROM tb_item WHERE tb_item.id = %(id)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:46:12,217 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:46:12,221 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:46:12,222 INFO: Response headers: Content-Type: application/json
+Content-Length: 46
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:47:43,856 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 6cd13aa4-9472-4137-b3b3-f483b41fab1d
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 46
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:47:43,857 INFO: Body: b'{\r\n    "name":"aaa",\r\n    "category_id":"1"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:47:43,860 INFO: Start Query: INSERT INTO tb_item (id, name, category_id) VALUES (%(id)s, %(name)s, %(category_id)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:47:43,861 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:47:43,867 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:47:43,868 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:47:43,869 INFO: Response status: 201 CREATED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:47:43,869 INFO: Response headers: Content-Type: application/json
+Content-Length: 154
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:51:23,069 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:56:41,902 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:56:56,171 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: b5c8e619-a476-4ebc-9d8a-06ce4a35709e
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 45
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:56:56,172 INFO: Body: b'{\r\n    "name":"ww",\r\n    "category_id":"1"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:56:56,206 INFO: Start Query: INSERT INTO tb_item (id, name, category_id) VALUES (%(id)s, %(name)s, %(category_id)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:56:56,207 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:56:56,214 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+WHERE tb_item.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:56:56,216 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:56:56,217 INFO: Response status: 201 CREATED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:56:56,218 INFO: Response headers: Content-Type: application/json
+Content-Length: 153
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:57:00,851 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 8762c35c-6d22-4d8d-82c2-a8a7c14b8005
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 104
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:57:00,851 INFO: Body: b'{\r\n    "page":1,\r\n    "per_page":20,\r\n    "other_data":{\r\n        "category_name":"Ding Yunxi"\r\n    }\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:57:00,858 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:57:00,860 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:57:00,863 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:57:00,867 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:57:00,870 INFO: Start Query: SELECT tb_category.id AS tb_category_id, tb_category.category_name AS tb_category_category_name 
+FROM tb_category 
+WHERE tb_category.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:57:00,872 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:57:00,875 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:57:00,876 INFO: Response headers: Content-Type: application/json
+Content-Length: 1873
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:57:08,923 INFO: Headers: User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: f55108ad-9465-479c-acad-9c82d3cb0e5b
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 14:57:08,923 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 14:57:08,926 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:57:08,928 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:57:08,932 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 14:57:08,933 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 14:57:08,935 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 14:57:08,935 INFO: Response headers: Content-Type: application/json
+Content-Length: 1008
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 14:59:56,853 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 14:59:59,108 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-15 15:00:07,505 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 1fc6b586-2423-41f0-930a-fb595d58010c
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 15:00:07,505 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 15:00:07,530 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 15:00:07,531 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 15:00:07,744 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 15:00:07,745 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 15:00:21,459 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: f0b65f21-248e-4b5f-8083-9799ce25bb79
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 15:00:21,459 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 15:00:21,461 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 15:00:21,463 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 15:00:21,464 INFO: Response status: 400 BAD REQUEST [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 15:00:21,464 INFO: Response headers: Content-Type: application/json
+Content-Length: 39
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-15 15:00:35,314 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: f141a2a4-637e-45a4-8832-665c5809d444
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 84
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-15 15:00:35,314 INFO: Body: b'{\r\n    "name":"wangwu",\r\n    "email":"wangwu123@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-15 15:00:35,315 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 15:00:35,317 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 15:00:35,419 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 15:00:35,420 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 15:00:35,428 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-15 15:00:35,429 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-15 15:00:35,430 INFO: UserDTO: {'id': 'b8f6f7c2874c451dab3eaed23ade4dc0', 'name': 'wangwu', 'email': 'wangwu123@gmail.com', 'pwd': 'pbkdf2:sha256:260000$1uwj0fRuRCtJ4yo3$a34860ac2475c4f7220d7c5cbb6a96ccc8d7c6ca2be1c3011a996cd184264a35'} [in D:\python-workspace\flaskProject\app\services\user_service.py:71]
+2024-07-15 15:00:35,430 INFO: Response status: 201 CREATED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-15 15:00:35,431 INFO: Response headers: Content-Type: application/json
+Content-Length: 441
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]

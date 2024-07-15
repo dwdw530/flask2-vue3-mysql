@@ -1,0 +1,1593 @@
+2024-07-14 10:17:47,209 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 10:17:49,487 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 10:17:50,581 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: bd44b571-2d72-4180-9647-8dfa288227dc
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 46
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:17:50,582 INFO: Body: b'{\r\n    "email":"aaa",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:17:50,582 ERROR: Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-14 10:17:50,591 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:17:50,591 INFO: Response headers: Content-Type: application/json
+Content-Length: 201
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:18:10,299 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 73a0b588-9efa-4b70-afee-88f4d99b21b2
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 46
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:18:10,300 INFO: Body: b'{\r\n    "email":"aaa",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:18:10,334 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:18:10,336 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:18:10,337 INFO: Response status: 401 UNAUTHORIZED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:18:10,337 INFO: Response headers: Content-Type: application/json
+Content-Length: 39
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:19:06,868 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 7b40045d-d719-4285-b394-9eb33d776427
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 67
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:19:06,869 INFO: Body: b'{\r\n    "email":"aaa",\r\n    "password":"111",\r\n    "token":"addd"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:19:06,870 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:19:06,871 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:19:06,872 INFO: Response status: 401 UNAUTHORIZED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:19:06,873 INFO: Response headers: Content-Type: application/json
+Content-Length: 39
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:19:21,575 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: bacaf056-398a-4828-90d4-8f05af4993a2
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 67
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:19:21,576 INFO: Body: b'{\r\n    "email":"aaa",\r\n    "password":"111",\r\n    "token":"addd"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:19:21,577 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:19:21,578 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:19:21,579 INFO: Response status: 401 UNAUTHORIZED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:19:21,579 INFO: Response headers: Content-Type: application/json
+Content-Length: 39
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:19:48,022 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: ba1e2522-95d1-4d0c-977f-8769f7a125f7
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 67
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:19:48,023 INFO: Body: b'{\r\n    "email":"aaa",\r\n    "password":"111",\r\n    "token":"addd"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:20:25,096 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:20:25,097 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:20:27,635 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:20:27,637 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:20:32,211 INFO: Response status: 401 UNAUTHORIZED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:20:32,212 INFO: Response headers: Content-Type: application/json
+Content-Length: 39
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:21:37,226 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 929f5517-e675-4610-b73e-c6575b0d0db1
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 82
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:21:37,227 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111",\r\n    "token":"addd"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:21:42,602 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:21:42,603 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:21:48,492 ERROR: Unhandled Exception: 'TestUser' object has no attribute 'check_password' [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-14 10:21:48,493 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:21:48,493 INFO: Response headers: Content-Type: application/json
+Content-Length: 117
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:23:08,971 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 10:23:09,355 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 53c9d2d0-c044-4cd0-b68b-724d058132a4
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 82
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:23:09,356 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111",\r\n    "token":"addd"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:23:15,168 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:23:15,169 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:23:21,523 INFO: Response status: 401 UNAUTHORIZED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:23:21,524 INFO: Response headers: Content-Type: application/json
+Content-Length: 39
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:31:15,102 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 10:31:18,993 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 10:31:19,322 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 21328b4d-38f2-4a2b-b964-f349b8554b55
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 82
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:31:19,323 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111",\r\n    "token":"addd"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:31:24,109 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:31:24,112 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:31:30,459 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:31:30,459 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:31:41,855 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 339cb094-2128-481e-8b41-cb096660af80
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:31:41,856 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:31:46,319 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:31:46,321 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:31:50,423 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:31:50,423 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:33:38,470 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 10:33:43,512 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 10:34:22,280 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 950d228d-46b4-4ec6-8658-dc6d0e48d28a
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 61
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:34:22,281 INFO: Body: b'{\r\n    "email":"kobehewo@gmail.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:34:22,314 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:34:22,316 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:34:22,427 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:34:22,427 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:39:28,036 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: ab69f091-5ecb-4bd4-bd6f-dd8785c8504e
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 73
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:39:28,037 INFO: Body: b'{\r\n    "name":"zs",\r\n    "email":"12345@qq.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:39:28,038 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:39:28,040 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:39:28,149 INFO: Start Query: INSERT INTO test_user (name, email, pwd) VALUES (%(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:39:28,150 ERROR: Query Failed [in D:\python-workspace\flaskProject\app\__init__.py:84]
+2024-07-14 10:39:28,152 ERROR: Unhandled Exception: (pymysql.err.OperationalError) (1364, "Field 'id' doesn't have a default value")
+[SQL: INSERT INTO test_user (name, email, pwd) VALUES (%(name)s, %(email)s, %(pwd)s)]
+[parameters: {'name': 'zs', 'email': '12345@qq.com', 'pwd': 'pbkdf2:sha256:260000$mLS40qiFS75YQ41B$c0bc14b12e0eef16874e870ed9d2ce52d0a2e07aa08d2b6118fdeb8bbd234f88'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-14 10:39:28,153 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:39:28,153 INFO: Response headers: Content-Type: application/json
+Content-Length: 465
+Access-Control-Allow-Origin: *
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:42:00,868 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 10:42:01,219 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 0fc992d3-fd32-4736-83a3-08ae4904015a
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 73
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:42:01,220 INFO: Body: b'{\r\n    "name":"zs",\r\n    "email":"12345@qq.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:42:01,263 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:42:01,266 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:42:01,474 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:42:01,476 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:42:01,494 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:42:01,497 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:42:01,499 INFO: Response status: 201 CREATED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:42:01,499 INFO: Response headers: Content-Type: application/json
+Content-Length: 421
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 10:43:00,552 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: f21e4ff4-9748-47b6-aaad-7c5a0198bdab
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 55
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 10:43:00,553 INFO: Body: b'{\r\n    "email":"12345@qq.com",\r\n    "password":"111"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 10:43:00,556 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 10:43:00,559 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 10:43:00,750 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 10:43:00,751 INFO: Response headers: Content-Type: application/json
+Content-Length: 421
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:32:44,899 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:32:44,899 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:32:44,900 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:32:44,900 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, OPTIONS
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:32:45,150 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 41
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:32:45,151 INFO: Body: b'{"email":"12345@qq.com","password":"111"}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:32:45,152 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:32:45,154 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:32:45,257 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:32:45,257 INFO: Response headers: Content-Type: application/json
+Content-Length: 421
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:33:06,983 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:33:06,983 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:33:06,984 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:33:06,984 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, OPTIONS
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:33:07,290 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 55
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:33:07,290 INFO: Body: b'{"name":"ls","email":"lisi@gmail.com","password":"111"}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:33:07,292 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:33:07,293 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:33:07,403 INFO: Start Query: INSERT INTO test_user (id, name, email, pwd) VALUES (%(id)s, %(name)s, %(email)s, %(pwd)s) [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:33:07,404 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:33:07,411 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:33:07,412 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:33:07,413 INFO: Response status: 201 CREATED [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:33:07,413 INFO: Response headers: Content-Type: application/json
+Content-Length: 426
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:33:17,871 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:33:17,872 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:33:17,872 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:33:17,872 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, OPTIONS
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:33:18,180 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 43
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:33:18,180 INFO: Body: b'{"email":"lisi@gmail.com","password":"111"}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:33:18,182 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:33:18,183 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:33:18,287 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:33:18,287 INFO: Response headers: Content-Type: application/json
+Content-Length: 426
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:45:57,867 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: dd8d3144-5873-4213-8820-ea8e67508834
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 45
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:45:57,867 INFO: Body: b'{\r\n    "name":"ww",\r\n    "category_id":"1"\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:45:57,870 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:45:57,871 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:45:57,878 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:45:57,879 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:45:57,882 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:45:57,882 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:46:16,631 INFO: Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.40.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 81d73b56-43b5-40bf-97e8-b389f5aa4b5e
+Host: 127.0.0.1:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 104
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:46:16,632 INFO: Body: b'{\r\n    "page":1,\r\n    "per_page":20,\r\n    "other_data":{\r\n        "category_name":"Ding Yunxi"\r\n    }\r\n}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:46:16,638 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:46:16,641 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:46:16,645 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item INNER JOIN tb_category ON tb_category.id = tb_item.category_id 
+WHERE tb_category.category_name LIKE %(category_name_1)s 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:46:16,648 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:46:16,653 INFO: Start Query: SELECT tb_category.id AS tb_category_id, tb_category.category_name AS tb_category_category_name 
+FROM tb_category 
+WHERE tb_category.id = %(pk_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 11:46:16,654 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 11:46:16,659 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:46:16,659 INFO: Response headers: Content-Type: application/json
+Content-Length: 1873
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:50:08,971 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: GET
+Access-Control-Request-Headers: authorization,body,content-type,method
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:50:08,971 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:50:08,972 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:50:08,973 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:50:09,222 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Method: POST
+Body: {"page":1,"per_page":10}
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:50:09,223 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:50:09,223 ERROR: Unhandled Exception: 405 Method Not Allowed: The method is not allowed for the requested URL. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-14 11:50:09,224 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:50:09,224 INFO: Response headers: Content-Type: application/json
+Content-Length: 138
+Access-Control-Allow-Origin: http://localhost:8080
+Vary: Origin
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:50:32,096 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: GET
+Access-Control-Request-Headers: authorization,body,content-type,method
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:50:32,097 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:50:32,098 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:50:32,098 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:50:32,409 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Method: POST
+Body: {"page":1,"per_page":10}
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:50:32,409 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:50:32,410 ERROR: Unhandled Exception: 405 Method Not Allowed: The method is not allowed for the requested URL. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-14 11:50:32,411 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:50:32,411 INFO: Response headers: Content-Type: application/json
+Content-Length: 138
+Access-Control-Allow-Origin: http://localhost:8080
+Vary: Origin
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:52:06,102 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: GET
+Access-Control-Request-Headers: authorization,body,content-type,method
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:52:06,102 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:52:06,103 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:52:06,103 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:52:06,353 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Method: POST
+Body: {"page":1,"per_page":10}
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:52:06,353 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:52:06,354 ERROR: Unhandled Exception: 405 Method Not Allowed: The method is not allowed for the requested URL. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-14 11:52:06,355 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:52:06,355 INFO: Response headers: Content-Type: application/json
+Content-Length: 138
+Access-Control-Allow-Origin: http://localhost:8080
+Vary: Origin
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:53:02,103 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: GET
+Access-Control-Request-Headers: authorization,body,content-type,method
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:53:02,105 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:53:02,105 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:53:02,105 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:53:02,415 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Method: POST
+Body: {"page":1,"per_page":10}
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:53:02,415 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:53:02,416 ERROR: Unhandled Exception: 405 Method Not Allowed: The method is not allowed for the requested URL. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-14 11:53:02,417 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:53:02,417 INFO: Response headers: Content-Type: application/json
+Content-Length: 138
+Access-Control-Allow-Origin: http://localhost:8080
+Vary: Origin
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:53:09,572 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: GET
+Access-Control-Request-Headers: authorization,body,content-type,method
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:53:09,572 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:53:09,573 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:53:09,573 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 11:53:09,884 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Method: POST
+Body: {"page":1,"per_page":10}
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 11:53:09,884 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 11:53:09,885 ERROR: Unhandled Exception: 405 Method Not Allowed: The method is not allowed for the requested URL. [in D:\python-workspace\flaskProject\app\__init__.py:90]
+2024-07-14 11:53:09,886 INFO: Response status: 500 INTERNAL SERVER ERROR [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 11:53:09,887 INFO: Response headers: Content-Type: application/json
+Content-Length: 138
+Access-Control-Allow-Origin: http://localhost:8080
+Vary: Origin
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:08:52,518 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:08:52,519 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:08:52,520 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:08:52,520 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:08:52,768 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:08:52,768 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:08:57,124 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:08:57,126 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:08:57,128 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:08:57,129 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:08:57,133 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:08:57,133 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:09:17,541 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:09:17,542 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:09:17,542 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:09:17,542 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:09:17,850 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:09:17,851 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:09:26,031 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:09:26,033 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:09:26,035 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:09:26,036 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:09:53,844 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:09:53,844 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:10:42,101 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:10:42,102 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:10:42,103 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:10:42,103 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:10:42,351 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:10:42,352 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:10:44,031 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:10:44,033 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:10:44,035 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:10:44,036 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:10:44,039 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:10:44,039 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:11:08,818 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:11:08,818 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:11:08,818 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:11:08,818 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:11:09,126 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:11:09,126 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:11:11,988 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:11:11,989 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:11:11,991 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:11:11,993 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:11:11,995 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:11:11,995 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:11:22,514 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:11:22,514 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:11:22,514 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:11:22,515 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:11:22,823 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:11:22,824 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:11:26,276 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:11:26,278 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:11:26,280 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:11:26,282 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:11:26,284 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:11:26,284 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:12:44,256 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:12:44,257 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:12:44,257 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:12:44,257 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:12:44,509 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:12:44,510 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:12:44,511 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:12:44,513 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:12:44,515 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:12:44,518 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:12:44,521 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:12:44,521 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:14:31,186 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:14:31,187 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:14:31,187 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:14:31,187 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:14:31,437 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:14:31,437 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:14:31,439 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:31,441 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:31,443 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:31,445 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:31,447 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:14:31,447 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:14:39,783 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:14:39,783 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:14:39,784 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:14:39,785 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:14:40,097 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:14:40,098 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:14:40,099 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:40,101 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:40,103 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:40,105 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:40,107 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:14:40,108 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:14:40,840 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:14:40,840 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:14:40,842 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:40,843 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:40,845 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:40,847 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:40,849 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:14:40,849 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:14:44,509 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:14:44,510 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:14:44,511 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:44,513 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:44,514 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:44,516 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:44,519 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:14:44,519 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:14:51,910 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:14:51,910 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:14:51,910 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:14:51,911 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:14:52,218 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkyNzk5OCwianRpIjoiMGZkYjljZDUtMjJkNC00NjA3LWJkOWMtZmFmYzJkMGMxNmE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Imxpc2lAZ21haWwuY29tIiwibmJmIjoxNzIwOTI3OTk4LCJjc3JmIjoiODcyYWJlOGUtMzk2Mi00N2QzLWI3ZmUtNjRlNjg3NTExMmUzIiwiZXhwIjoxNzIwOTI4ODk4fQ.hvD245UEHhA7IFEbL10i4CRswpo6tPZPziTZfbKbDDw
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:14:52,218 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:14:52,219 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:52,221 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:52,223 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:14:52,224 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:14:52,226 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:14:52,227 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:15:11,671 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:15:11,671 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:15:11,672 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:15:11,672 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, OPTIONS
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:15:11,983 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 47
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:15:11,984 INFO: Body: b'{"email":"kobehewo@gmail.com","password":"111"}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:15:11,986 INFO: Start Query: SELECT test_user.id AS test_user_id, test_user.name AS test_user_name, test_user.email AS test_user_email, test_user.pwd AS test_user_pwd 
+FROM test_user 
+WHERE test_user.email = %(email_1)s 
+ LIMIT %(param_1)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:15:11,987 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:15:12,095 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:15:12,095 INFO: Response headers: Content-Type: application/json
+Content-Length: 435
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:15:12,233 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:15:12,233 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:15:12,234 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:15:12,234 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:15:12,442 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkzMDUxMiwianRpIjoiYTFmNDI4NjAtYTk0Mi00ODZjLTkwY2EtZjRmMDVhNGM4MDYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImtvYmVoZXdvQGdtYWlsLmNvbSIsIm5iZiI6MTcyMDkzMDUxMiwiY3NyZiI6ImEyODE5ZDNlLTdhMTctNDJlMi05NWJjLWJhNzhkZThlMzc5ZCIsImV4cCI6MTcyMDkzMTQxMn0.e4_v0Qrbka75XwnRV2MWrsDSLpny7LCgW53iqjxLdTU
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:15:12,443 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:15:12,444 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:15:12,446 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:15:12,447 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:15:12,450 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:15:12,452 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:15:12,453 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:15:22,377 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:15:22,378 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:15:22,378 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:15:22,378 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:15:22,684 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkzMDUxMiwianRpIjoiYTFmNDI4NjAtYTk0Mi00ODZjLTkwY2EtZjRmMDVhNGM4MDYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImtvYmVoZXdvQGdtYWlsLmNvbSIsIm5iZiI6MTcyMDkzMDUxMiwiY3NyZiI6ImEyODE5ZDNlLTdhMTctNDJlMi05NWJjLWJhNzhkZThlMzc5ZCIsImV4cCI6MTcyMDkzMTQxMn0.e4_v0Qrbka75XwnRV2MWrsDSLpny7LCgW53iqjxLdTU
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:15:22,685 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:15:22,686 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:15:22,688 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:15:22,689 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:15:22,691 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:15:22,693 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:15:22,693 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:16:13,006 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:16:13,006 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:16:13,007 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:16:13,007 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:16:13,315 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkzMDUxMiwianRpIjoiYTFmNDI4NjAtYTk0Mi00ODZjLTkwY2EtZjRmMDVhNGM4MDYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImtvYmVoZXdvQGdtYWlsLmNvbSIsIm5iZiI6MTcyMDkzMDUxMiwiY3NyZiI6ImEyODE5ZDNlLTdhMTctNDJlMi05NWJjLWJhNzhkZThlMzc5ZCIsImV4cCI6MTcyMDkzMTQxMn0.e4_v0Qrbka75XwnRV2MWrsDSLpny7LCgW53iqjxLdTU
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:16:13,315 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:16:13,316 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:16:13,318 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:16:13,319 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:16:13,321 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:16:13,323 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:16:13,323 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:16:22,303 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:16:22,303 INFO: Body: b'' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:16:22,304 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:16:22,304 INFO: Response headers: Content-Type: text/html; charset=utf-8
+Allow: POST, PUT, OPTIONS, DELETE
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 12:16:22,610 INFO: Headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 24
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMDkzMDUxMiwianRpIjoiYTFmNDI4NjAtYTk0Mi00ODZjLTkwY2EtZjRmMDVhNGM4MDYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImtvYmVoZXdvQGdtYWlsLmNvbSIsIm5iZiI6MTcyMDkzMDUxMiwiY3NyZiI6ImEyODE5ZDNlLTdhMTctNDJlMi05NWJjLWJhNzhkZThlMzc5ZCIsImV4cCI6MTcyMDkzMTQxMn0.e4_v0Qrbka75XwnRV2MWrsDSLpny7LCgW53iqjxLdTU
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:63]
+2024-07-14 12:16:22,611 INFO: Body: b'{"page":1,"per_page":10}' [in D:\python-workspace\flaskProject\app\__init__.py:64]
+2024-07-14 12:16:22,612 INFO: Start Query: SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item 
+ LIMIT %(param_1)s, %(param_2)s [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:16:22,613 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:16:22,615 INFO: Start Query: SELECT count(*) AS count_1 
+FROM (SELECT tb_item.id AS tb_item_id, tb_item.name AS tb_item_name, tb_item.category_id AS tb_item_category_id 
+FROM tb_item) AS anon_1 [in D:\python-workspace\flaskProject\app\__init__.py:75]
+2024-07-14 12:16:22,616 INFO: Query Complete [in D:\python-workspace\flaskProject\app\__init__.py:80]
+2024-07-14 12:16:22,619 INFO: Response status: 200 OK [in D:\python-workspace\flaskProject\app\__init__.py:68]
+2024-07-14 12:16:22,619 INFO: Response headers: Content-Type: application/json
+Content-Length: 922
+
+ [in D:\python-workspace\flaskProject\app\__init__.py:69]
+2024-07-14 22:10:06,960 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
+2024-07-14 22:10:09,113 INFO: App startup [in D:\python-workspace\flaskProject\app\__init__.py:46]
