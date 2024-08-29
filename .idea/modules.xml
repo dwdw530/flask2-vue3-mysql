@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/flaskProject.iml" filepath="$PROJECT_DIR$/.idea/flaskProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/flask2-vue3-mysql.iml" filepath="$PROJECT_DIR$/.idea/flask2-vue3-mysql.iml" />
     </modules>
   </component>
 </project>
