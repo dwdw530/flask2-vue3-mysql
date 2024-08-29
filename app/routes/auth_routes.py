@@ -33,7 +33,9 @@ def login():
     pwd = data.get('password')
 
     user = UserService.login_user(email=email, password=pwd)
-    id = user.id
+    id = None
+    if (user is not None):
+        id = user.id
     if user and user.check_password(pwd):
         if(redis_client.get(f"user:{id}")):
             user_dto = redis_client.get(f"user:{id}")
